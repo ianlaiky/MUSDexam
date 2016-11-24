@@ -48,13 +48,11 @@ public class MainActivity extends AppCompatActivity {
         email2 = (EditText) findViewById(R.id.email2);
 
 
-        em = email.getText().toString();
-        em2 = email2.getText().toString();
+
 
         add = address.getText().toString();
 
-        yes = ((RadioButton) findViewById(R.id.Ryes)).isSelected();
-        no = ((RadioButton) findViewById(R.id.Rno)).isSelected();
+
 
         listt = (ListView) findViewById(R.id.list);
 
@@ -65,8 +63,15 @@ public class MainActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                em = email.getText().toString();
+                em2 = email2.getText().toString();
+                yes = ((RadioButton) findViewById(R.id.Ryes)).isChecked();
+                no = ((RadioButton) findViewById(R.id.Rno)).isChecked();
+                String addr = address.getText().toString();
+                String inf = info.getText().toString();
 
-                String dis = "Location is at:" + "address" + "\n" + "Other info " + "info" + "\n" + "Email: " + "email" + "@" + em2 + "\n" + "Yes radiobutton is selected:" + yes + "\n" + "No radiobutton is selected:" + no + "\n" +
+
+                String dis = "Location is at:" + addr + "\n" + "Other info " + inf+ "\n" + "Email: " + em + "@" + em2 + "\n" + "Yes radiobutton is selected:" + yes + "\n" + "No radiobutton is selected:" + no + "\n" +
                         "Type of animal:" + animal;
 
                 displayToast(dis);
