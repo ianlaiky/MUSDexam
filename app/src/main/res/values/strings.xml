@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pract</string>
+
+<string name="ar">"@"</string>
+
+    <string-array name="lis">
+
+        <item>Dogs</item>
+        <item>Otters</item>
+        <item>Birds</item>
+        <item>Snakes</item>
+        <item>Bear</item>
+        <item>Big Foot</item>
+
+    </string-array>
+
+</resources>

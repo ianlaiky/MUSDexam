@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your email address"
+        />
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="john_smith"
+        android:layout_below="@id/emailText"
+
+
+
+        />
+    <TextView
+        android:id="@+id/tem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailText"
+        android:layout_toRightOf="@+id/emailId"
+
+        android:text="@string/ar"
+        />
+    <EditText
+        android:id="@+id/email2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tem"
+        android:hint="singet.com.sg"
+        android:layout_below="@id/emailText"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The location is at"
+        android:layout_below="@id/emailId"
+        />
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tap to enter address"
+        android:layout_below="@+id/locationText"
+        />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any additional information"
+        android:layout_below="@+id/address"
+        />
+    <EditText
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Near petrol kiosk, behind lamp post"
+        android:layout_below="@+id/infoText"
+        />
+    <TextView
+        android:id="@+id/whr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urgent case?"
+        android:layout_below="@+id/info"
+        />
+    <RadioGroup
+        android:layout_below="@+id/whr"
+        android:id="@+id/radiogrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioButton
+            android:id="@+id/Ryes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            />
+        <RadioButton
+            android:id="@+id/Rno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/whrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any other details?"
+        android:layout_below="@+id/radiogrp"
+        />
+
+    <EditText
+        android:id="@+id/tes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please include case details here"
+        android:layout_below="@id/whrr"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/tes"
+
+        />
+
+    <TextView
+        android:id="@+id/anText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select type of animal"
+        android:layout_below="@+id/save"
+        />
+
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/anText"
+        >
+
+
+    </ListView>
+
+</RelativeLayout>
